@@ -72,7 +72,6 @@ int main()
 	    	temp->right = newNode(b);
 	    	temp->left = NULL;
 	    	q.push(temp->right);
-	    	move = temp;
     	}
     	else if(b==-1)
     	{
@@ -81,7 +80,6 @@ int main()
 	    	temp->left = newNode(a);
 	    	temp->right = NULL;
 	    	q.push(temp->left);
-	    	move = temp;
     	}
     	else
     	{
@@ -91,7 +89,6 @@ int main()
 	    	temp->right = newNode(b);
 	    	q.push(temp->left);
 	    	q.push(temp->right);
-	    	move = temp;
     	}
     }
     int t;
